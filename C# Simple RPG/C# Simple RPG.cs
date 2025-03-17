@@ -10,16 +10,14 @@ namespace C__Simple_RPG
         public SimpleRpg()
         {
             InitializeComponent();
-            _player = new Engine.Player();
-            _player.CurrentHitPoints = 10;
-            _player.MaximumHitPoints = 10;
-            _player.Gold = 20;
-            _player.ExperiencePoints = 0;
-            _player.Level = 1;
+            _player = new Engine.Player(10, 10, 20, 0, 1);
             lblHitPoints.Text = _player.CurrentHitPoints.ToString();
             lblGold.Text = _player.Gold.ToString();
             lblExperience.Text = _player.ExperiencePoints.ToString();
             lblLevel.Text = _player.Level.ToString();
+
+            Location lokacja = new Location(1, "Home", "This is your house");
+            
         }
 
         private void SimpleRpg_Load(object sender, EventArgs e)
