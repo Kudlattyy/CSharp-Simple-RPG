@@ -17,7 +17,7 @@ namespace C__Simple_RPG
             lblLevel.Text = _player.Level.ToString();
 
             Location lokacja = new Location(1, "Home", "This is your house");
-            
+
         }
 
         private void SimpleRpg_Load(object sender, EventArgs e)
@@ -26,6 +26,21 @@ namespace C__Simple_RPG
         }
 
         private void label5_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnEast_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
 
         }
