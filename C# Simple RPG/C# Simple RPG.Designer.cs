@@ -48,9 +48,9 @@
             rtbLocation = new RichTextBox();
             rtbMessages = new RichTextBox();
             dgvInventory = new DataGridView();
-            dvgQuests = new DataGridView();
+            dgvQuests = new DataGridView();
             ((System.ComponentModel.ISupportInitialize)dgvInventory).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)dvgQuests).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)dgvQuests).BeginInit();
             SuspendLayout();
             // 
             // label1
@@ -193,6 +193,7 @@
             btnSouth.TabIndex = 15;
             btnSouth.Text = "South";
             btnSouth.UseVisualStyleBackColor = true;
+            btnSouth.Click += btnSouth_Click;
             // 
             // btnWest
             // 
@@ -202,6 +203,7 @@
             btnWest.TabIndex = 16;
             btnWest.Text = "West";
             btnWest.UseVisualStyleBackColor = true;
+            btnWest.Click += btnWest_Click;
             // 
             // rtbLocation
             // 
@@ -238,28 +240,28 @@
             dgvInventory.TabIndex = 19;
             dgvInventory.CellContentClick += dataGridView1_CellContentClick;
             // 
-            // dvgQuests
+            // dgvQuests
             // 
-            dvgQuests.AllowUserToAddRows = false;
-            dvgQuests.AllowUserToDeleteRows = false;
-            dvgQuests.AllowUserToResizeRows = false;
-            dvgQuests.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dvgQuests.EditMode = DataGridViewEditMode.EditProgrammatically;
-            dvgQuests.Enabled = false;
-            dvgQuests.Location = new Point(16, 446);
-            dvgQuests.MultiSelect = false;
-            dvgQuests.Name = "dvgQuests";
-            dvgQuests.ReadOnly = true;
-            dvgQuests.RowHeadersVisible = false;
-            dvgQuests.Size = new Size(312, 189);
-            dvgQuests.TabIndex = 20;
+            dgvQuests.AllowUserToAddRows = false;
+            dgvQuests.AllowUserToDeleteRows = false;
+            dgvQuests.AllowUserToResizeRows = false;
+            dgvQuests.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dgvQuests.EditMode = DataGridViewEditMode.EditProgrammatically;
+            dgvQuests.Enabled = false;
+            dgvQuests.Location = new Point(16, 446);
+            dgvQuests.MultiSelect = false;
+            dgvQuests.Name = "dgvQuests";
+            dgvQuests.ReadOnly = true;
+            dgvQuests.RowHeadersVisible = false;
+            dgvQuests.Size = new Size(312, 189);
+            dgvQuests.TabIndex = 20;
             // 
             // SimpleRpg
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(719, 651);
-            Controls.Add(dvgQuests);
+            Controls.Add(dgvQuests);
             Controls.Add(dgvInventory);
             Controls.Add(rtbMessages);
             Controls.Add(rtbLocation);
@@ -284,7 +286,7 @@
             Text = "Simple RPG";
             Load += SimpleRpg_Load;
             ((System.ComponentModel.ISupportInitialize)dgvInventory).EndInit();
-            ((System.ComponentModel.ISupportInitialize)dvgQuests).EndInit();
+            ((System.ComponentModel.ISupportInitialize)dgvQuests).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -311,6 +313,6 @@
         private RichTextBox rtbLocation;
         private RichTextBox rtbMessages;
         private DataGridView dgvInventory;
-        private DataGridView dvgQuests;
+        private DataGridView dgvQuests;
     }
 }
