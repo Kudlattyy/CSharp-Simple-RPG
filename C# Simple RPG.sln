@@ -5,6 +5,8 @@ VisualStudioVersion = 17.12.35527.113 d17.12
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "C# Simple RPG", "C# Simple RPG\C# Simple RPG.csproj", "{C4ED41E9-34C5-40C8-9006-D5B36EBE05C1}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Engine", "Engine\Engine.csproj", "{5C2EF320-6CFA-46C6-BDEC-9C00102E1EA6}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{C4ED41E9-34C5-40C8-9006-D5B36EBE05C1}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C4ED41E9-34C5-40C8-9006-D5B36EBE05C1}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C4ED41E9-34C5-40C8-9006-D5B36EBE05C1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5C2EF320-6CFA-46C6-BDEC-9C00102E1EA6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5C2EF320-6CFA-46C6-BDEC-9C00102E1EA6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5C2EF320-6CFA-46C6-BDEC-9C00102E1EA6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5C2EF320-6CFA-46C6-BDEC-9C00102E1EA6}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
